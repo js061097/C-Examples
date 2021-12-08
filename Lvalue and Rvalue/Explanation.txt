@@ -1,0 +1,12 @@
+Lvalues are objects or variables that occupy a space in the memory (i.e. they have an address) whereas R values do not.
+
+Example:
+int a = 5, b = 6;
+a and b are Lvalues as they are defined and occupy space in the memory whereas 5 and 6 are Rvalues as they don't occupy any space in the memory.
+int c = a + b;
+c is a Lvalue whereas the expression a+b is Rvalue as they dont hold any space in the memory. The sum of a+b can be imagined as a temporary value which doesn't get stored in the memory and rather assigned to a Lvalue.
+
+To access both Lvalues and Rvalues through functions with references we use "const int& " in the function parameter. This is because C++ doesn't allow using int& to access Rvalues as the parameter because it needs to initialized to an Lvalue by definition.
+The problem with using const is that the value obtained through it cannot be modified inside the function body.
+
+To access Rvalues and manipulate it inside the function body
