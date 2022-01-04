@@ -15,6 +15,9 @@ int main()
 {
     std::vector<int> vect {1,2,3,4};
     forEach(vect,&PrintVal);
+    
+    forEach(vect,[](int val){std::cout<<val<<endl;}); //lambdas
+    
     return 0;
 }
 
