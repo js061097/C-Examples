@@ -16,8 +16,13 @@ int main()
     auto func2 = &helloworld;
     func2();
     return 0;
+    
+    typedef void(*func_name)(); //with typedef
+    func_name func3 = &helloworld;
+    func3();
 }
 
+//Hello World!
 //Hello World!
 //Hello World!
 //Hello World!
