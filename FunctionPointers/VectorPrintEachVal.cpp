@@ -1,0 +1,19 @@
+#include <iostream>
+#include <vector>
+
+void PrintVal(int a){
+    std::cout<<a<<std::endl;
+}
+
+void forEach(std::vector<int> &vect,void(*print)(int)){
+    for(int i:vect)
+        print(i);
+}
+
+
+int main()
+{
+    std::vector<int> vect {1,2,3,4};
+    forEach(vect,&PrintVal);
+    return 0;
+}
