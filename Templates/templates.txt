@@ -1,0 +1,5 @@
+Templates are:
+- Blueprints
+- Functions and Classes
+- Allows plugging in any time over a placeholder
+- Complier generates appropriate function/class from blueprint (Done during compile time)
